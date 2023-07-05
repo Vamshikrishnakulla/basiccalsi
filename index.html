@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, Javascripts">
+    <meta name="description" content="normal calci">
+    <meta name="author" content="calci.com">
+    <title>responsive calci</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/cal.js"></script>
+</head>
+
+<body>
+    <form>
+        <section class="flex-container">
+            <section class="flex-item1">
+                <label for="cal">Calculator</label><br>
+                <textarea id="cal" name="result" value="0" readonly></textarea>
+            </section>
+
+            <section class="flex-item2">
+                <div onclick="calDisplay(1)">1</div>
+                <div onclick="calDisplay(2)">2</div>
+                <div onclick="calDisplay(3)">3</div>
+                <div onclick="calDisplay(4)">4</div>
+                <div onclick="calDisplay(5)">5</div>
+                <div onclick="calDisplay(6)">6</div>
+                <div onclick="calDisplay(7)">7</div>
+                <div onclick="calDisplay(8)">8</div>
+                <div onclick="calDisplay(9)">9</div>
+                <div onclick="calDisplay(0)">0</div>
+                <div onclick="calDisplay('.')">.</div>
+                <div onclick="calDisplay('=')">=</div>
+            </section>
+            <section class="flex-item3">
+                <input type="reset" value="C">
+                <div onclick="calDisplay('+')">+</div>
+                <div onclick="calDisplay('-')">-</div>
+                <div onclick="calDisplay('*')">*</div>
+                <div onclick="calDisplay('/')">/</div>
+                <div onclick="calDisplay('=')">=</div>
+            </section>
+        </section>
+    </form>
+</body>
+
+</html>
